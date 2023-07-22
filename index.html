@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Modal | Basavaraj</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img class="profile" src="./assets/profile-pic.png" alt="user">
+            </div>
+
+            <div class="user-name">
+                <h2>Basavaraj Kumbhar</h2>
+            </div>
+
+            <div class="designation">
+                <h3>Front-End Developer</h3>
+            </div>
+
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>contact me</div>
+                </button>
+                
+                <a href="https://instagram.com/kumbhar_basavaraj_?igshid=MGNiNDI5ZTU=" target="_blank"><button class="btn-follow btn-card">follow me</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- modal components -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div>
+            <h3>contact on Social Media</h3>
+
+            <div class="icon-container">
+                <a href="https://www.facebook.com/basavaraj.kumbhar.7?mibextid=ZbWKwL" target="_blank" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/basavaraj-kumbhar-a68672220/" target="_blank" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/9594936756" target="_blank" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/BasavarajKumbhar" target="_blank" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                
+            </div>
+        </div>
+
+
+    </div> 
+
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+    
+    <script src="https://kit.fontawesome.com/a7855291d0.js" crossorigin="anonymous"></script>
+
+    <script src="/main.js"></script>
+</body>
+</html>
